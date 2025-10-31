@@ -1,0 +1,172 @@
+
+.card-news-container{
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.card-news-container .card-category-container a{
+    font-size: 13px;
+    line-height: 15px;
+    color: #434343;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.card-news-container .card-image-container{
+    margin-bottom: 15px;
+}
+
+.card-news-container .card-image-container div{
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.card-news-container .card-image-container div .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border-radius: 100px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    transition: background .2s ease-in;
+}
+
+.card-news-container .card-image-container div .play-button:hover{
+    background-color: #333;
+}
+
+.card-news-container .card-image-container div .play-button i{
+    color: white;
+    font-size: 75px;
+    margin: auto auto auto 15px;
+    line-height: 50px;
+}
+
+.card-news-container .card-text-container a{
+    transition: color .2s ease-in;
+    text-decoration: none;
+    color: #151515;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.card-news-container .card-text-container a:hover{
+    color : #f9a300;
+}
+
+.card-news-container .card-footer-container span{
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+.card-news-container .card-footer-container i{
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* CARD ALTERNATIVOS */
+
+.card-news-container-alt{
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.card-news-container-alt .card-category-container a{
+    font-size: 13px;
+    line-height: 15px;
+    color: #434343;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.card-news-container-alt .card-image-container{
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.card-news-container-alt .card-image-container div{
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    /*Oculta el contenido que salga de la caja*/
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-news-container-alt .card-news-alt-content{
+    width: 50%;
+    padding-left: 15px;
+}
+
+.card-news-container-alt .card-image-container div .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border-radius: 100px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    transition: background .2s ease-in;
+}
+
+.card-news-container-alt .card-image-container div .play-button:hover{
+    background-color: #333;
+}
+
+.card-news-container-alt .card-image-container div .play-button i{
+    color: white;
+    font-size: 75px;
+    margin: auto auto auto 15px;
+    line-height: 50px;
+}
+
+.card-news-container-alt .card-text-container a{
+    transition: color .2s ease-in;
+    text-decoration: none;
+    color: #151515;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.card-news-container-alt .card-text-container a:hover{
+    color : #f9a300;
+}
+
+.card-news-container-alt .card-footer-container span{
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+.card-news-container-alt .card-footer-container i{
+    color: #666;
+    font-size: 12px;
+}
