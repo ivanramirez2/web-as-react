@@ -110,9 +110,7 @@ function App() {
             </div>
           </div> 
 
-     
-
-
+    
 
           <div className="col-12">
             <div className="row">
