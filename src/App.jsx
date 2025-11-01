@@ -65,10 +65,163 @@ function App() {
           <div className="col-12 col-md-8">
             <div className="row">
               <NewsCard isVideo="true"></NewsCard>
-              <NewsCard auxClass="col-6"></NewsCard>
- 
-            </div>  
+              <NewsCard auxClass="col-6" 
+                category="Mercado de fichajes"
+                text="El sueldo de Rashford, prohibitivo para el Barça"
+                img="https://img.asmedia.epimg.net/resizer/v2/MTVOT4ACBFHQZPP46OTEFAO2A4.jpg?auth=183a230d2b2ff060d75de7cc2d35c0471e3177e0676d4d2cb12b866771ad127a&width=360&height=203&smart=true">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                category="Fútbol"
+                text="Roque Mesa y su ‘obsesión’ por el dinero: “No perdoné ni un euro”"
+                img="https://img.asmedia.epimg.net/resizer/v2/BGA4TWUSN5L5PCOZHHPOYFTGIY.jpg?auth=cb0a27f0cf366bf2bc19218c7296594a419a64292a5b8859e4515fd0d088d8dc&width=360&height=203&smart=true">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                category="Real Madrid - Valencia"
+                text="Mi retirada es irrevocable porque el tratamiento de mi hija no es algo a corto plazo"
+                img="https://img.asmedia.epimg.net/resizer/v2/HIGUTEQAJJG27EBZPCJ4SWDXBI.JPG?auth=8f0fd6429016049d174df6f9ab2abb5a7bb61edfda33dfaaa318d1562e414ba6&width=360&height=203&focal=1952%2C1263">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                category="Real Madrid - Valencia"
+                text="Alineación posible del Real Madrid hoy contra el Valencia"
+                img="https://img.asmedia.epimg.net/resizer/v2/66NVUTRUBBB5PK6VSEBV5W2PWY.png?auth=4fff929fff02240f9c27625bccb639b2c2a994618265d5008f154ec95914d1fc&width=360&height=203&smart=true">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                isVideo="true"
+                category="NBA| Grizzlies 112-Lakers 117"
+                text="Doncic: 44 puntos para alcanzar a Kobe, Chamberlain y Jordan"
+                img="https://img.asmedia.epimg.net/resizer/v2/66NVUTRUBBB5PK6VSEBV5W2PWY.png?auth=4fff929fff02240f9c27625bccb639b2c2a994618265d5008f154ec95914d1fc&width=360&height=203&smart=true">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                category="Fórmula 1"
+                text="Red Bull lo deja todo por Verstappen"
+                img="https://img.asmedia.epimg.net/resizer/v2/L7MJFYXHI5PMLJFNUPK4U6ROP4.jpg?auth=569c45bfcff5f7d5766896f55b430e5870bd3fa6dbe7a1fa0b634af716efc186&width=360&height=203&focal=1315%2C334">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                category="Fútbol"
+                text="Roque Mesa y su ‘obsesión’ por el dinero: “No perdoné ni un euro”"
+                img="https://img.asmedia.epimg.net/resizer/v2/SPVOY4AQYRBBTD4WKDOYOKBCXM.jpg?auth=3ce4ff1349942643ba21d5ae84267b3d36d92b22ca60f988777e5301fd9a5da3&width=360&height=203&smart=true">
+              </NewsCard>   
+              <NewsCard auxClass="col-6" 
+                category="Fútbol"
+                text="Roque Mesa y su ‘obsesión’ por el dinero: “No perdoné ni un euro”"
+                img="https://img.asmedia.epimg.net/resizer/v2/BGA4TWUSN5L5PCOZHHPOYFTGIY.jpg?auth=cb0a27f0cf366bf2bc19218c7296594a419a64292a5b8859e4515fd0d088d8dc&width=360&height=203&smart=true">
+              </NewsCard>
+   
+            </div>
           </div> 
+
+     
+
+
+
+          <div className="col-12">
+            <div className="row">
+              <NewsCard auxClass="col-4" 
+                category="Ofrecido por alpecin"
+                text="Ni minoxidil ni lociones: el champú con cafeína Nº1 en Amazon que previene la caída del cabello”"
+                img="https://img.asmedia.epimg.net/resizer/v2/BJOCTJCDTZHTHML2SU7VZ2KNEU.jpg?auth=99a6d7e926ce0f73a8b8229649235c134005479d094612433e03ec1e78650479&width=240&height=135&smart=true">
+              </NewsCard> 
+              <NewsCard auxClass="col-4" 
+                category="El debate de los usuarios de as"
+                text="¿Debe Vinicius ser titular ante el Valencia?:"
+                img="https://img.asmedia.epimg.net/resizer/v2/B4DMP6IGB5EXDGWMYKCMO4KUXY.jpg?auth=38eee3c87232dcc07e223b84b03feeac81a3e433f6284ed0add58f7250005e7a&width=240&height=135&smart=true">
+              </NewsCard> 
+              <NewsCard auxClass="col-4" 
+                category="Tenerife"
+                text="La viral respuesta de Álvaro Cervera sobre Álvaro Benito: “Es al único al que no quito la voz”"
+                img="https://img.asmedia.epimg.net/resizer/v2/M3GOXRJ2LVMQDGEKXZBOKSKIHM.jpg?auth=3fc4b93649af1b8d818df8e0af6dfe00dcc6e66bc2d4b61ccdd6fd224bff5a1e&width=240&height=135&focal=3713%2C1966">
+              </NewsCard> 
+
+              <NewsCard auxClass="col-4" 
+                category="Famosos"
+                text="Broncano da las claves de su dieta diaria y señala el superalimento que toma: “Puedes sobrevivir una semana con eso”"
+                img="https://img.asmedia.epimg.net/resizer/v2/DAELG7JGFJFVXK4YNEFUWSGTOM.jpg?auth=dfa786e5ac11352301eb504e74755a2d3cd7dfe59523ba5e01f7762bde17a372&width=240&height=135&smart=true">
+              </NewsCard>
+
+              <div className="col-4"></div>
+
+              <div className="col-4">
+                <div className="row">
+                  <NewsCard auxClass="col-12" 
+                    category="Cine"
+                    text="Amaia Salamanca revela por qué rechazó participar en la película española más taquillera"
+                    alt="1"
+                    img="https://img.asmedia.epimg.net/resizer/v2/6OWRYMUGBBHSPKMEQUIKUIE24A.jpg?auth=9f15d9d15fd3cca1981b98a8b4b1d1c40177cc4c495a4bc32c83cabdfc459eea&width=240&height=135&smart=true"> 
+                  </NewsCard>
+                  <NewsCard auxClass="col-12" 
+                    category="Cine"
+                    text="Pérez-Reverte recuerda esta mítica película de acción y aventuras: “Un clásico de mi infancia”"
+                    alt="1"
+                    img="https://img.asmedia.epimg.net/resizer/v2/T7ZHPWM2LREATLREGLKBEGC74I.jpg?auth=1564be0fc1e7ba50acc076fc90c4418066eeb1361362eff4fb12eadcdf0707cc&width=240&height=135&smart=true"> 
+                  </NewsCard>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12">
+            <div className="row">
+              <NewsCard auxClass="col-3" 
+                category="El debate de los usuarios de as"
+                text="¿Debe Vinicius ser titular ante el Valencia?:"
+                img="https://img.asmedia.epimg.net/resizer/v2/B4DMP6IGB5EXDGWMYKCMO4KUXY.jpg?auth=38eee3c87232dcc07e223b84b03feeac81a3e433f6284ed0add58f7250005e7a&width=240&height=135&smart=true">
+              </NewsCard> 
+              <NewsCard auxClass="col-3" 
+                category="Tenerife"
+                text="La viral respuesta de Álvaro Cervera sobre Álvaro Benito: “Es al único al que no quito la voz”"
+                img="https://img.asmedia.epimg.net/resizer/v2/M3GOXRJ2LVMQDGEKXZBOKSKIHM.jpg?auth=3fc4b93649af1b8d818df8e0af6dfe00dcc6e66bc2d4b61ccdd6fd224bff5a1e&width=240&height=135&focal=3713%2C1966">
+              </NewsCard> 
+
+              <NewsCard auxClass="col-3" 
+                category="Famosos"
+                text="Broncano da las claves de su dieta diaria y señala el superalimento que toma: “Puedes sobrevivir una semana con eso”"
+                img="https://img.asmedia.epimg.net/resizer/v2/DAELG7JGFJFVXK4YNEFUWSGTOM.jpg?auth=dfa786e5ac11352301eb504e74755a2d3cd7dfe59523ba5e01f7762bde17a372&width=240&height=135&smart=true">
+              </NewsCard>
+
+              <NewsCard auxClass="col-3" 
+                category="Ofrecido por alpecin"
+                text="Ni minoxidil ni lociones: el champú con cafeína Nº1 en Amazon que previene la caída del cabello”"
+                img="https://img.asmedia.epimg.net/resizer/v2/BJOCTJCDTZHTHML2SU7VZ2KNEU.jpg?auth=99a6d7e926ce0f73a8b8229649235c134005479d094612433e03ec1e78650479&width=240&height=135&smart=true">
+              </NewsCard>      
+            </div>
+          </div>
+
+
+          <div className="col-12 col-md-8">
+            <div className="row">
+                  <NewsCard auxClass="col-6" 
+                    category="Ciencia"
+                    text="España construirá el puente más alto de Europa: desafía a los límites de la ingeniería"
+                    alt="1"
+                    img="https://img.asmedia.epimg.net/resizer/v2/CCP2GUKHSZAMRL3WJWLWCJXAWY.png?auth=445f2f8bfad00ed228e9fc8c58a3fe2fa5f469dbc469bf4c9defc82b8b198fc9&width=360&height=203&smart=true"> 
+                  </NewsCard>                  
+                  <NewsCard auxClass="col-6" 
+                    category="Sociedad"
+                    text="Misterioso hallazgo cerca de Las Vegas: encuentran más de 300 montones de restos humanos"
+                    alt="1"
+                    img="https://img.asmedia.epimg.net/resizer/v2/VUKFD3JKDJAKVDVDAM4TEPNCCA.webp?auth=ac267e43351cda9e50ea7ba8765789e67222dc58250dc1e4f629cd3043050b7b&width=360&height=203&smart=true"> 
+                  </NewsCard> 
+            </div>
+
+            <div className="row">
+                  <NewsCard auxClass="col-6" 
+                    category="Ciencia"
+                    text="España construirá el puente más alto de Europa: desafía a los límites de la ingeniería"
+                    alt="1"
+                    img="https://img.asmedia.epimg.net/resizer/v2/LL4XVGZO6JAT7FJDDCTMNHUE2A.jpg?auth=7cc65c5a0bd6d5c102e4066306e663564fab5e3da7b9bdc82bcd3257e2ceb8c2&width=360&height=203&smart=true"> 
+                  </NewsCard>                  
+                  <NewsCard auxClass="col-6" 
+                    category="Sociedad"
+                    text="En Alemania hablan de “duro golpe económico” para restaurantes españoles con la situación de la cerveza"
+                    alt="1"
+                    img="https://img.asmedia.epimg.net/resizer/v2/U4BHEZ2HIYMZDLYI5ZHNL5PXOA.jpg?auth=51f9794924149e1fc48e7d9efa4aed6fc5c32e4979f540baaeed38a047304834&width=360&height=203&smart=true"> 
+                  </NewsCard> 
+            </div>
+
+          </div>
+          
+
+          
         </div> 
       </div>  
 
