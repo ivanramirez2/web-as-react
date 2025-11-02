@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import NewsCard from './Components/NewsCard/NewsCard';
+import OpinionCard from './Components/OpinionCard/OpinionCard';
 
 
 function App() {
@@ -64,7 +65,12 @@ function App() {
         <div className="row">
           <div className="col-12 col-md-8">
             <div className="row">
-              <NewsCard isVideo="true"></NewsCard>
+              <NewsCard auxClass="col-12" 
+                isVideo="true"
+                category="Mercado de fichajes"
+                text="Duelo de figuras a seguir"
+                img="https://img.asmedia.epimg.net/resizer/v2/4VPZR2PJKJAIVKSXPUGJ3OYZ6U.jpg?auth=cbc63f2ff05fe36849de2cd8c103984fb99cef477afe31782c542fdf976d9bd0&width=360&height=203&focal=157%2C40">
+              </NewsCard> 
               <NewsCard auxClass="col-6" 
                 category="Mercado de fichajes"
                 text="El sueldo de Rashford, prohibitivo para el Barça"
@@ -156,6 +162,7 @@ function App() {
               </div>
             </div>
           </div>
+          
 
           <div className="col-12">
             <div className="row">
@@ -182,6 +189,12 @@ function App() {
                 img="https://img.asmedia.epimg.net/resizer/v2/BJOCTJCDTZHTHML2SU7VZ2KNEU.jpg?auth=99a6d7e926ce0f73a8b8229649235c134005479d094612433e03ec1e78650479&width=240&height=135&smart=true">
               </NewsCard>      
             </div>
+          </div>
+
+                    <div className="col-12">
+              <div className="row">
+                   <OpinionCard />
+              </div>
           </div>
 
 
