@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import NewsCard from './Components/NewsCard/NewsCard';
+import OpinionContainer from './Components/OpinionCard/OpinionContainer';
 import OpinionCard from './Components/OpinionCard/OpinionCard';
-
 
 function App() {
   const [count, setCount] = useState(0)
@@ -191,10 +191,11 @@ function App() {
             </div>
           </div>
 
-                    <div className="col-12">
+          <div className="col-12">
               <div className="row">
-                   <OpinionCard />
+                   <OpinionContainer/>
               </div>
+           
           </div>
 
 
