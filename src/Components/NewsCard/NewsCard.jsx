@@ -2,6 +2,7 @@ import "./NewsCard.css"
 
 function NewsCard(props) {
 
+    let isAltContainer = props.alt ? props.alt : 0;
     let auxClass = props.auxClass ? props.auxClass : "col-12";
     let isVideo = props.isVideo != undefined && props.isVideo != null ? props.isVideo : false;
 
@@ -13,7 +14,7 @@ function NewsCard(props) {
     
 
 
-    auxClass += " card-news-container"
+    auxClass += isAltContainer ? " card-news-container-alt" : " card-news-container";
 
 
   
@@ -35,23 +36,48 @@ function NewsCard(props) {
                     </div>
                 </a>
             </div>
-            <div className="card-category-container">
-                <a href="#">
-                    {category}
-                </a>
-            </div>
-            <div className="card-text-container">
-                <a href="#">
-                    {text}
-                </a>
-            </div>
-            <div className="card-footer-container">
-                <span>AS ACTUALIDAD</span> <i className="bi bi-chat-right"></i> 
-            </div>
+
+            { isAltContainer ? (
+                <div className="card-news-alt-content">
+                    <div className="card-category-container">
+                        <a href="#">
+                            sociedad
+                        </a>
+                    </div>
+                    <div className="card-text-container">
+                        <a href="#">
+                            Alfonso Muñoz, funcionario de la Seguridad Social, en 2026: “Será el 100%”
+                        </a>
+                    </div>
+                    <div className="card-footer-container">
+                        <span>AS ACTUALIDAD</span> <i className="bi bi-chat-right"></i>
+                    </div>
+                </div>
+            ) : (
+                <>
+                    <div className="card-category-container">
+                        <a href="#">
+                            {category}
+                        </a>
+                    </div>
+                    <div className="card-text-container">
+                        <a href="#">
+                            {text}
+                        </a>
+                    </div>
+                    <div className="card-footer-container">
+                        <span>AS ACTUALIDAD</span> <i className="bi bi-chat-right"></i>
+                    </div>
+                </>
+            )}
+
         </div>
 
     );
-
 }
+
+
+
+
 
 export default NewsCard;

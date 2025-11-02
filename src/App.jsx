@@ -190,13 +190,11 @@ function App() {
                   <NewsCard auxClass="col-6" 
                     category="Ciencia"
                     text="España construirá el puente más alto de Europa: desafía a los límites de la ingeniería"
-                    alt="1"
                     img="https://img.asmedia.epimg.net/resizer/v2/CCP2GUKHSZAMRL3WJWLWCJXAWY.png?auth=445f2f8bfad00ed228e9fc8c58a3fe2fa5f469dbc469bf4c9defc82b8b198fc9&width=360&height=203&smart=true"> 
                   </NewsCard>                  
                   <NewsCard auxClass="col-6" 
                     category="Sociedad"
                     text="Misterioso hallazgo cerca de Las Vegas: encuentran más de 300 montones de restos humanos"
-                    alt="1"
                     img="https://img.asmedia.epimg.net/resizer/v2/VUKFD3JKDJAKVDVDAM4TEPNCCA.webp?auth=ac267e43351cda9e50ea7ba8765789e67222dc58250dc1e4f629cd3043050b7b&width=360&height=203&smart=true"> 
                   </NewsCard> 
             </div>
@@ -205,13 +203,11 @@ function App() {
                   <NewsCard auxClass="col-6" 
                     category="Ciencia"
                     text="España construirá el puente más alto de Europa: desafía a los límites de la ingeniería"
-                    alt="1"
                     img="https://img.asmedia.epimg.net/resizer/v2/LL4XVGZO6JAT7FJDDCTMNHUE2A.jpg?auth=7cc65c5a0bd6d5c102e4066306e663564fab5e3da7b9bdc82bcd3257e2ceb8c2&width=360&height=203&smart=true"> 
                   </NewsCard>                  
                   <NewsCard auxClass="col-6" 
                     category="Sociedad"
                     text="En Alemania hablan de “duro golpe económico” para restaurantes españoles con la situación de la cerveza"
-                    alt="1"
                     img="https://img.asmedia.epimg.net/resizer/v2/U4BHEZ2HIYMZDLYI5ZHNL5PXOA.jpg?auth=51f9794924149e1fc48e7d9efa4aed6fc5c32e4979f540baaeed38a047304834&width=360&height=203&smart=true"> 
                   </NewsCard> 
             </div>
