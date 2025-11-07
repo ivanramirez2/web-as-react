@@ -1,16 +1,38 @@
-import { useState } from 'react'
+import { useEffect,useState } from 'react'
 import './App.css'
 import NewsCard from './Components/NewsCard/NewsCard';
 import OpinionContainer from './Components/OpinionCard/OpinionContainer';
-import OpinionCard from './Components/OpinionCard/OpinionCard';
+
 
 function App() {
   const [count, setCount] = useState(0)
+  const [show, setShow] = useState(false);
 
-   const [show, setShow] = useState(false);
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  
+useEffect(() => {
+    setLoading(true);
+    setError('');
 
+    fetch('https://api.spaceflightnewsapi.net/v4/articles/?limit=6')
+      .then((res) => {
+        if (!res.ok) throw new Error('Error HTTP ' + res.status);
+        return res.json();
+      })
+      .then((data) => {
+        // Normalizamos a lo que necesita la NewsCard
+        const items = data.results.map((a) => ({
+          id: a.id,
+          category: a.news_site, // fuente como “categoría”
+          text: a.title,         // título como “texto” de la card
+          img: a.image_url,      // imagen
+         // href: a.url          // enlace al artículo
+        }));
+        setArticles(items);
+      })
+  }, []); // [] = solo una vez al ejecutar
 
   return (
     <>
@@ -70,49 +92,19 @@ function App() {
                 category="Mercado de fichajes"
                 text="Duelo de figuras a seguir"
                 img="https://img.asmedia.epimg.net/resizer/v2/4VPZR2PJKJAIVKSXPUGJ3OYZ6U.jpg?auth=cbc63f2ff05fe36849de2cd8c103984fb99cef477afe31782c542fdf976d9bd0&width=360&height=203&focal=157%2C40">
-              </NewsCard> 
-              <NewsCard auxClass="col-6" 
-                category="Mercado de fichajes"
-                text="El sueldo de Rashford, prohibitivo para el Barça"
-                img="https://img.asmedia.epimg.net/resizer/v2/MTVOT4ACBFHQZPP46OTEFAO2A4.jpg?auth=183a230d2b2ff060d75de7cc2d35c0471e3177e0676d4d2cb12b866771ad127a&width=360&height=203&smart=true">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                category="Fútbol"
-                text="Roque Mesa y su ‘obsesión’ por el dinero: “No perdoné ni un euro”"
-                img="https://img.asmedia.epimg.net/resizer/v2/BGA4TWUSN5L5PCOZHHPOYFTGIY.jpg?auth=cb0a27f0cf366bf2bc19218c7296594a419a64292a5b8859e4515fd0d088d8dc&width=360&height=203&smart=true">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                category="Real Madrid - Valencia"
-                text="Mi retirada es irrevocable porque el tratamiento de mi hija no es algo a corto plazo"
-                img="https://img.asmedia.epimg.net/resizer/v2/HIGUTEQAJJG27EBZPCJ4SWDXBI.JPG?auth=8f0fd6429016049d174df6f9ab2abb5a7bb61edfda33dfaaa318d1562e414ba6&width=360&height=203&focal=1952%2C1263">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                category="Real Madrid - Valencia"
-                text="Alineación posible del Real Madrid hoy contra el Valencia"
-                img="https://img.asmedia.epimg.net/resizer/v2/66NVUTRUBBB5PK6VSEBV5W2PWY.png?auth=4fff929fff02240f9c27625bccb639b2c2a994618265d5008f154ec95914d1fc&width=360&height=203&smart=true">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                isVideo="true"
-                category="NBA| Grizzlies 112-Lakers 117"
-                text="Doncic: 44 puntos para alcanzar a Kobe, Chamberlain y Jordan"
-                img="https://img.asmedia.epimg.net/resizer/v2/66NVUTRUBBB5PK6VSEBV5W2PWY.png?auth=4fff929fff02240f9c27625bccb639b2c2a994618265d5008f154ec95914d1fc&width=360&height=203&smart=true">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                category="Fórmula 1"
-                text="Red Bull lo deja todo por Verstappen"
-                img="https://img.asmedia.epimg.net/resizer/v2/L7MJFYXHI5PMLJFNUPK4U6ROP4.jpg?auth=569c45bfcff5f7d5766896f55b430e5870bd3fa6dbe7a1fa0b634af716efc186&width=360&height=203&focal=1315%2C334">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                category="Fútbol"
-                text="Roque Mesa y su ‘obsesión’ por el dinero: “No perdoné ni un euro”"
-                img="https://img.asmedia.epimg.net/resizer/v2/SPVOY4AQYRBBTD4WKDOYOKBCXM.jpg?auth=3ce4ff1349942643ba21d5ae84267b3d36d92b22ca60f988777e5301fd9a5da3&width=360&height=203&smart=true">
-              </NewsCard>   
-              <NewsCard auxClass="col-6" 
-                category="Fútbol"
-                text="Roque Mesa y su ‘obsesión’ por el dinero: “No perdoné ni un euro”"
-                img="https://img.asmedia.epimg.net/resizer/v2/BGA4TWUSN5L5PCOZHHPOYFTGIY.jpg?auth=cb0a27f0cf366bf2bc19218c7296594a419a64292a5b8859e4515fd0d088d8dc&width=360&height=203&smart=true">
               </NewsCard>
-   
+              
+              {articles.map((a) => (
+              <NewsCard
+                key={a.id}
+                auxClass="col-12 col-md-6"
+                category={a.category}
+                text={a.text}
+                img={a.img}
+                href={a.href}
+              />
+            ))}
+             
             </div>
           </div> 
 
